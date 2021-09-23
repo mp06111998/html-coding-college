@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Script.js"></script>
+    <title>Imenik kontaktov</title>
+</head>
+<body>
+    <div id="main">
+       
+        <div class="header">
+            <div style="float: left"><h1>Imenik kontaktov</h1></div>
+            <div class="button">
+                <a href="viri.html"><span class="h7">VIRI</span></a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        
+        <div class="article">
+            <div class="slika">
+                <div class="vsebina">
+                    <div class="naslov">
+                        <h1>DOBRODOŠLI V IMENIK</h1>
+                    </div>
+                    <div class="izpis">
+                        Dodaj kontakt: <br>
+                        <input id="ime" type="text" placeholder="Ime">
+                        <input id="priimek" type="text" placeholder="Priimek"> <br>
+                        <input id="telefon" type="number" placeholder="Telefon">
+                        <input id="naslov" type="text" placeholder="Naslov"> <br>
+                        <button type="button" onclick="dodaj();">DODAJ KONTAKT</button>
+                    </div>
+                    
+                    <div class="search">
+                       Iskanje:
+                        <input type="text" id="isci" onkeyup="iskanje()" placeholder="Iskanje po imenih...">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slikca">
+                <div class="levo">
+                    <h3>Tvoj imenik</h3>
+                    <span>Za <span style="color: yellow">izbris</span> določenega kontakta, primite nanj z miško in ga dragnite v okno na desni imenovano odstranjevanje kontakta.</span> <br><br>
+                    <span>Za <span style="color: yellow">dodajanje</span> določenega kontakta, zgoraj pod dodaj kontakt vpišite ustrezne informacije in sicer telefonska številka more biti dolga točno 9 števil.</span> <br> <br>
+                    <span>Za <span style="color: yellow">iskanje</span> določenega kontakta, imamo zgoraj iskanje kjer vpišete ime in vam v realnem času filtrira vse kontakte v tabeli kontaktov, ki vsebujejo del vašega vnosa v imenu kontakta.</span>
+                </div>
+
+                <div class="tabela">
+                   <h3>Tabela kontaktov</h3>
+                    <table id="meni">
+                        <tr>
+                            <th>Ime</th>
+                            <th>Priimek</th>
+                            <th>Telefon</th>
+                            <th>Naslov</th>
+                        </tr>
+                        <tr id="1" draggable="true" ondragstart="drag(event)">
+                            <td>Marcel</td>
+                            <td>Polanc</td>
+                            <td>030387439</td>
+                            <td>Tržišče 15b</td>
+                        </tr>
+                        <tr id="2" draggable="true" ondragstart="drag(event)">
+                            <td>Janez</td>
+                            <td>Novak</td>
+                            <td>031538236</td>
+                            <td>Novo mesto 8</td>
+                        </tr>
+                        <tr id="3" draggable="true" ondragstart="drag(event)">
+                            <td>Nik</td>
+                            <td>Janežič</td>
+                            <td>030562732</td>
+                            <td>Celje 81</td>
+                        </tr>
+                        <tr id="4" draggable="true" ondragstart="drag(event)">
+                            <td>Janja</td>
+                            <td>Mihelič</td>
+                            <td>041629371</td>
+                            <td>Ljubljana 68a</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="desno">
+                    <div id="dropdiv" ondrop="drop(event)" ondragover="allowDrop(event)">  
+                        <div class="notri">
+                            <b>Odstranjevanje kontakta</b>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            
+        </div>
+        
+    </div>
+</body>
+</html>

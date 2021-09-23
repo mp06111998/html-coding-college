@@ -1,0 +1,164 @@
+#main{
+    background-color: gainsboro;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header{
+    padding: 5px 0px 5px 50px;
+    color: white;
+    background-color: black;
+}
+
+.button{
+    margin: 0px 60px 0px 0px;
+    padding: 30px 0px 30px 20px;
+    float: right;
+    border-left: 1px solid white;  
+}
+
+.slika{
+    background-image: url(Ura.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slikca{
+    background-image: url(Vlak.jpg);
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vsebina{
+    padding-bottom: 100px;
+}
+
+.naslov{
+    padding-top: 30px; 
+    text-align: center;
+    color: white;
+}
+
+.izpis{
+    height: 110px;
+    width: 450px;
+    background-color: yellow;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.search{
+    height: 40px;
+    width: 450px;
+    background-color: yellow;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+button{
+    border-radius: 20px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.tabela{
+    float: left;
+    height: auto;
+    background-color: yellow;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 60%;
+    white-space:nowrap;
+	border: 1px solid black;
+}
+
+td {
+	text-align: center;
+	border: 1px solid black;
+    padding: 3px 7px 2px 7px;
+	/* Prevent text selection */
+	-webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+th {
+	text-align: center;
+    background-color: black;
+    color: #F2F0E1;
+}
+
+.levo{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: darkgray;
+    padding-bottom: 20px;
+}
+
+.desno {
+    float: left;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.notri {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: darkgray;
+    padding: 20px;
+    color: yellow;
+    padding: 20px;
+    padding: 20px;
+}
+
+.h7:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+  text-decoration: none; /* no underline */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.header { width: 100%; }
+.tabela { width: 100%; }
+.levo { width: 100%; }
+.desno { width: 100%; }
+
+@media only screen and (min-width: 1200px) {
+    .header { width: 100%; }
+    .tabela { width: 33.33%; }
+    .levo { width: 20%; }
+    .desno { width: 20%; }
+}
